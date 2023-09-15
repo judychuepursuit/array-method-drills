@@ -1,22 +1,21 @@
 const { nums, words } = require("./data/data.js");
 
-// Every
-const isEveryNumGreaterThan2 = () => {
-  //
+// Every: Determine if every number is greater than or equal to 2
+const isEveryNumGreaterThan2 = (nums) => {
+  return nums.every(num => num.length > 2);
 };
-
+// Determine if every word shorter than 7 characters
 const isEveryWordShorterThan7 = () => {
-  //
+  return words.every(word => word.length < 7);
 };
 
-// Filter
-
-const arrayLessThan5 = () => {
-  //
+// Filter: Filter the array for numbers less than 5
+const arrayLessThan5 = (nums) => {
+  return nums.filter(num => num < 5);
 };
-
+// Filter words that have an odd length
 const arrayOddLengthWords = () => {
-  //
+  return words.filter(word => word.length % 2 !==0);
 };
 
 // Find
