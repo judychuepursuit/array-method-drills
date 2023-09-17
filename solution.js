@@ -28,44 +28,44 @@ const firstWordLongerThan4Char = () => {
   return words.find(word => word.length >= 4)
 };
 
-// Find Index
-
+// Find Index: find the index of the first number that is divisible by 3
 const firstNumIndexDivisibleBy3 = (nums) => {
   return nums.findIndex(num => num % 3 === 0)
 };
 
+// find the index of the first word that is less than 2 characters long
 const firstWordIndexLessThan2Char = () => {
   return words.findIndex(word => word.length <= 2)
 };
 
-// For Each
-
-const logValuesTimes3 = () => {
-  //
+// For Each: console.log each value of the nums array multiplied by 3
+const logValuesTimes3 = (nums) => {
+  nums.forEach(nums => console.log(nums *3))
 };
 
-const logWordsWithExclamation = () => {
-  //
+// console.log each word with an exclamation point at the end of it
+const logWordsWithExclamation = (words) => {
+  words.forEach(word => console.log(word + '!'));
 };
 
-// Map
-
-const arrayValuesSquaredTimesIndex = () => {
-  //
+// Map1. Make a new array of each number squared and then multiplied by their index number
+const arrayValuesSquaredTimesIndex = (nums) => {
+  return nums.map((num, index) => num ** 2 * index)
 };
 
-const arrayWordsUpcased = () => {
-  //
+// Make a new array of all the words in all uppercase
+const arrayWordsUpcased = (words) => {
+  return words.map((word) => word.toUpperCase())
 };
 
-// Some
-
-const areSomeNumsDivisibleBy7 = () => {
-  //
+// Some: Find out if some numbers are divisible by 7
+const areSomeNumsDivisibleBy7 = (nums) => {
+  return nums.some(num => num % 7 == 0);
 };
 
-const doSomeWordsHaveAnA = () => {
-  //
+// Find out if some words have the letter `a` in them
+const doSomeWordsHaveAnA = (words) => {
+  return words.some(word => word.includes("a"));
 };
 
 module.exports = {
